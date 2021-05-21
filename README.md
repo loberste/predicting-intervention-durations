@@ -25,8 +25,8 @@ This repository contains the code necessary to reproduce the major results of ou
 
 * Since we cannot provide the data due to privacy restrictions, you need to personally acquire the [MIMIC-III dataset](https://mimic.physionet.org/).
 * After installing MIMIC-III, additional tables must be generated due to performance reasons (or views, if preferred)
- * Use scripts in the [mysql folder](mysql/) which are adapted from the code provided in the [MIMIC-III code repository](https://github.com/MIT-LCP/mimic-code/tree/main/mimic-iii/concepts)
- * In addition, execute [gcs_first_day.sql](https://github.com/MIT-LCP/mimic-code/blob/main/mimic-iii/concepts/firstday/gcs_first_day.sql) and store in a `patient_firstday_gcs` table/view
+  * Use scripts in the [mysql folder](mysql/) which are adapted from the code provided in the [MIMIC-III code repository](https://github.com/MIT-LCP/mimic-code/tree/main/mimic-iii/concepts)
+  * In addition, execute [gcs_first_day.sql](https://github.com/MIT-LCP/mimic-code/blob/main/mimic-iii/concepts/firstday/gcs_first_day.sql) and store in a `patient_firstday_gcs` table/view
 
 In summary, we use the following data for the experiments:
 
