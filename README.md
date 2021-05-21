@@ -57,8 +57,8 @@ In your local repository, you need to create a `connection` to the MIMIC-III dat
 
 Process|Input|Important steps|Output
 -|-|-|-
-`additional-data-query`|(SQL statements)|performs all subprocesses of the `additional/` directory to extract patient- and admission-related data|dataset (without target label)
-`duration-query`|(SQL statements)|performs extraction of fluid intake durations by considering |fluid intake durations (target label)
+`additional-data-query`|(SQL statements)|performs all subprocesses of the `additional/` directory to extract patient- and admission-related data|dataset (without target)
+`duration-query`|(SQL statements)|performs extraction of fluid intake durations by considering |fluid intake durations (target)
 `duration-selection`|(all above)|joins fluid intake durations with all patient- and admission-related data|selected data
 `preprocessing`|selected data|data cleaning, date feature engineering|preprocessed data
 
