@@ -2,7 +2,7 @@
 
 The data extraction process of Octreotide intake (`itemid = 225155`) turned out to be complex, considering that patients receive prescribed fluids one or more times with several interruptions or dosage changes. Therefore, rows in which a previous administration was continued – immediately or a little later – were joined by window functions, group-wise enumerations, and conditional expressions. We describe this in the following with obfuscated data.
 
-Select start and end times of ), having grouped by `linkorderid`:
+Select start and end times, having grouped by `linkorderid`:
 
 ```sql
 SELECT icustay_id,
