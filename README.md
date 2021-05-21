@@ -37,7 +37,7 @@ Source tables|Attributes
 `CHARTEVENTS`|Mean measurements on the first day: arterial pressure, blood glucose level, body temperature, diastolic blood pressure, heart rate, respiratory rate, saturation of peripheral oxygen (SpO2), systolic blood pressure
 `DIAGNOSES_ICD`, `PROCEDURES_ICD`|No. of diagnoses, no. of procedures, primary diagnosis, primary procedure, secondary diagnosis, secondary procedure
 `TRANSFERS`|Speciality patients were admitted to
-`INPUTEVENTS_MV`|Duration of octreotide intake, no. of previous octreotide intakes, start time
+`INPUTEVENTS_MV`|Duration of Octreotide intake, no. of previous Octreotide intakes, start time
 `CHARTEVENTS`|qSOFA
 `CHARTEVENTS`, `CPTEVENTS`|Comorbidities: alcohol abuse, cardiac arrhythmias, chronic pulmonary, coagulopathy, fluid electrolyte disorder, liver disease, uncomplicated diabetes, weight loss
 
@@ -58,7 +58,7 @@ In your local repository, you need to create a `connection` to the MIMIC-III dat
 Process|Input|Important steps|Output
 -|-|-|-
 `additional-data-query`|(SQL statements)|performs all subprocesses of the `additional/` directory to extract patient- and admission-related data|dataset (without target)
-`duration-query`|(SQL statements)|performs extraction of fluid intake durations by considering |fluid intake durations (target)
+`duration-query`|(SQL statements)|performs extraction of fluid intake durations as described in [notes/octreotide-intake.md](notes/octreotide-intake.md)|fluid intake durations (target)
 `duration-selection`|(all above)|joins fluid intake durations with all patient- and admission-related data|selected data
 `preprocessing`|selected data|data cleaning, date feature engineering|preprocessed data
 
