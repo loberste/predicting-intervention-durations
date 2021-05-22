@@ -1,6 +1,6 @@
 # Extract durations of Octreotide intake
 
-The data extraction process of Octreotide intake (`itemid = 225155`) turned out to be complex, considering that patients receive prescribed fluids one or more times with several interruptions or dosage changes. Therefore, rows in which a previous administration was continued – immediately or a little later – were joined by window functions, group-wise enumerations, and conditional expressions. We describe this in the following with obfuscated data.
+The data extraction process of Octreotide intake (`itemid = 225155`) turned out to be complex, considering that patients receive prescribed fluids potential interruptions or dosage changes. Therefore, rows in which a previous administration was immediately continued were joined by window functions, group-wise enumerations, and conditional expressions. We describe this in the following with obfuscated data.
 
 Select start and end times, having grouped by `linkorderid`:
 
@@ -29,7 +29,7 @@ Result:
 | 3333     | 34       | 15.06.2118   13:00  | 15.06.2118   `14:30`|
 | 3333     | 35       | 15.06.2118   `21:31`| 16.06.2118   09:29  |
 
-*Problem (see `highlights`): Still, Octreotide is given further, although `linkorderid` is different.*
+*Notably (see `highlights`), Octreotide is given one or multiple times, although `linkorderid` is different, with zero, one or more interruptions.*
 
 Therefore, add row number (`rn`) and indicator, whether duration continues or not (`to_prev`). Also, add enumeration based on that grouping (`gn`).
 
