@@ -4,11 +4,14 @@ This repository contains the code necessary to reproduce the major results of ou
 **When Every Minute Matters – Using Predictive Analytics of Intervention Durations to Support Hospital Scheduling**  
 *[Luis Oberste](https://www.bwl.uni-mannheim.de/heinzl/team/luis-oberste/), [Okan Aydingül](https://www.bwl.uni-mannheim.de/heinzl/team/dr-okan-aydinguel/), [Ekaterina Jussupow](https://www.bwl.uni-mannheim.de/heinzl/team/ekaterina-jussupow/), [Armin Heinzl](https://www.bwl.uni-mannheim.de/heinzl/team/prof-dr-armin-heinzl/)* - University of Mannheim, Germany
 
-[[Paper]](#) [[Conference Homepage]](#)
+[[Paper]](https://aisel.aisnet.org/pacis2021/221) [[Conference Homepage]](https://aisel.aisnet.org/pacis2021)
 
 ```
-@proceedings{xxx,
-...
+@inproceedings{oberste2021,
+	author       = {Oberste, Luis and Ayding{\"u}l, Okan and Jussupow, Ekaterina and Heinzl, Armin},
+	title        = {When Every Minute Matters -- Using Predictive Analytics of Intervention Durations to Support Hospital Scheduling},
+	year         = 2021,
+	booktitle    = {PACIS 2021 Proceedings}
 }
 ```
 
